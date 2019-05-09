@@ -29,5 +29,5 @@ load("@io_bazel_rules_docker//toolchains/docker:toolchain.bzl",
 # Configure the docker toolchain.
 docker_toolchain_configure(
   name = "docker_config",
-      client_config="/workspace/.docker",
+      client_config="/workspace/.docker/config.json",
 )
