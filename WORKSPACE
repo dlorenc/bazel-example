@@ -22,3 +22,12 @@ container_pull(
     registry = "gcr.io",
     repository = "distroless/base",
 )
+
+load("@io_bazel_rules_docker//toolchains/docker:toolchain.bzl",
+    docker_toolchain_configure="toolchain_configure"
+)
+# Configure the docker toolchain.
+docker_toolchain_configure(
+  name = "docker_config",
+      client_config="/workspace/.docker",
+)
