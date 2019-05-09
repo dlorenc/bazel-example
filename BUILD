@@ -13,6 +13,6 @@ container_push(
     name = "push",
     image = ":app",
     registry = "gcr.io",
-    repository = "tekton-testing-239316/app",
+    repository = "dlorenc-vmtest2/app",
     format ="Docker",
 )
